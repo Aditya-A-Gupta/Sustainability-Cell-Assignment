@@ -1,0 +1,251 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('Images/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    padding-top:8%;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25%;
+}
+
+.logo {
+    width: 150px; /* Adjust the size of your logo */
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.9);
+    padding-top: 1%;
+    padding-bottom:1%;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    font-size:125%;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-card-right{
+    display: flex;
+}
+
+.content-right{
+    margin-left: 5%;
+    font-size: 150%;
+    margin-bottom:1%;
+    margin-top:0%;
+}
+
+.text-right{
+    margin-left:2%;
+    font-size: 90%;
+    margin-top: 0%;
+}
+
+.event-card-left{
+    display:flex
+}
+
+.content-left{
+    width: 60%;
+    font-size: 150%;
+    margin-bottom:1%;
+}
+
+.text-left{
+    margin-left:2%;
+    margin-right:3%;
+    font-size: 90%;
+    margin-top: 0%;
+}
+
+.ESG_W{
+    width: 100%;
+    height: 80%;
+}
+
+.Oreo{
+    padding-top: 10%;
+}
+
+.Body_Page {
+    background: linear-gradient(to bottom,rgb(8, 61, 17), rgb(11, 109, 24));
+}
+
+main {
+    background: linear-gradient(to bottom,rgb(8, 61, 17), rgb(11, 109, 24));
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    border-top:2px solid black;
+}
+
+.Apps {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-bottom: 0.5%; 
+}
+
+.App {
+    height: 40px;
+    width: 40px;
+}
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .header-content {
+        padding-bottom: 10%;
+    }
+
+    .logo {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .sus_cell_heading {
+        font-size: 2em;
+    }
+
+    .Body_Page {
+        padding: 10px;
+    }
+
+    .event-card-right, .event-card-left {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .event-card-right img, .event-card-left img {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .content-right, .content-left {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .Apps {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .Apps a {
+        margin: 5px;
+    }
+
+    footer div {
+        text-align: center;
+    }
+}
+
+/* Specific styles for very small screens */
+@media (max-width: 480px) {
+    .header-content {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    nav ul {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .event-card-right img, .event-card-left img {
+        width: 90%;
+    }
+
+    .Apps {
+        flex-direction: column;
+    }
+
+    .Apps a {
+        margin: 10px 0;
+    }
+}
